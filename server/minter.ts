@@ -11,15 +11,15 @@ const sdk = new ThirdwebSDK(
     // Your wallet private key
     process.env.PRIVATE_KEY as string,
     // RPC URL, we'll use Polygon Mumbai
-    ethers.getDefaultProvider("https://rinkeby.arbitrum.io/rpc"),
+    ethers.getDefaultProvider("https://polygon-rpc.com/"),
   ),
 );
 
-const token = sdk.getTokenModule("0x31EB2a1513D7FF93e36Ea65A2e52355870910692");
+const token = sdk.getTokenModule("0x119189133a12FB40340573F6482244Aa9f24a64b");
 
 // Set the amount of currency you want to mint
 // (Actual amount, number of decimals)
-const amount = ethers.utils.parseUnits("1000", 18);
+const amount = ethers.utils.parseUnits("10", 18);
 
 // Minting the currency, 1000 Test coin
 const mintCurrency = async () => {
