@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-mesh {
+  background-image: #99acff;
+  background-image: radial-gradient(
+      at 35% 55%,
+      hsla(273, 79%, 79%, 1) 0,
+      transparent 46%
+    ),
+    radial-gradient(at 20% 82%, hsla(311, 80%, 67%, 1) 0, transparent 46%),
+    radial-gradient(at 77% 38%, hsla(291, 68%, 66%, 1) 0, transparent 50%),
+    radial-gradient(at 97% 8%, hsla(66, 97%, 79%, 1) 0, transparent 43%);
+}
