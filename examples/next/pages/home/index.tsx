@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import DownloadIcon from "../../assets/download_icon.svg";
 import ProfileIcon from "../../assets/profile_icon.svg";
+import Navbar from "../../components/Navbar";
 import { data } from "./data";
 
 const HomePage = () => {
@@ -20,12 +21,7 @@ const HomePage = () => {
 
   return (
     <div className="max-w-7xl px-10 mx-auto mt-4">
-      <nav className="flex justify-between items-center">
-        <h1 className="text-2xl">BitResearch</h1>
-        <button className="bg-white py-4 px-8 rounded-xl shadow-black hover:shadow-black-lg">
-          Connected to wallet
-        </button>
-      </nav>
+      <Navbar />
 
       <div className="grid grid-cols-1 mt-10 gap-6 xl:grid-cols-2">
         {data.map((item) => (

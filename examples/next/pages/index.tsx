@@ -17,7 +17,7 @@ export default function () {
 
   return (
     <>
-      <Hooks />
+      {/* <Hooks /> */}
       <div className="bg-mesh w-full h-screen">
         <div className="max-w-6xl mx-auto px-10 pt-10 h-5/6">
           <nav className="flex justify-between items-center">
